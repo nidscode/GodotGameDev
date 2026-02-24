@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nidhi Bivalkar | Godot Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="container">
+
+<header class="hero">
+  <div>
+    <h1>NIDHI BIVALKAR</h1>
+    <p class="tagline">Godot Developer • Systems Architect • Gameplay Engineer</p>
+    <div class="xp-wrapper">
+      <span>LEVEL 9</span>
+      <div class="xp-bar"><div class="xp-fill"></div></div>
+    </div>
+    <button class="primary" onclick="scrollToSection('games')">ENTER PORTFOLIO</button>
+  </div>
+</header>
+
+<section class="glass about">
+  <h2>Developer Profile</h2>
+  <p>
+  Godot developer with 3 years of experience designing scalable gameplay systems,
+  modular scene architectures, event-driven mechanics, AI behaviors, physics logic,
+  and polished UI systems. Focused on performance optimization and clean architecture.
+  </p>
+
+  <div class="stats">
+    <div><h3>12+</h3><p>Game Systems Built</p></div>
+    <div><h3>4</h3><p>Full Prototypes</p></div>
+    <div><h3>100k+</h3><p>Lines of GDScript</p></div>
+    <div><h3>60 FPS</h3><p>Performance Target</p></div>
+  </div>
+</section>
+
+<section id="games" class="glass games">
+  <h2>Featured Projects</h2>
+
+  <div class="game-card">
+    <div class="game-info">
+      <h3>🌑 ECLIPSE PROTOCOL</h3>
+      <p>
+      Sci-fi top-down tactical roguelite built in Godot 4.
+      Procedural level generation, modular enemy AI trees,
+      dynamic lighting system, and event-based combat engine.
+      </p>
+      <ul>
+        <li>Custom state machine framework</li>
+        <li>Behavior-tree AI system</li>
+        <li>Procedural room generator</li>
+        <li>Dynamic shader-driven fog of war</li>
+      </ul>
+      <button onclick="openModal('modal1')">View Gameplay</button>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-info">
+      <h3>🕰 FRACTURED TIMELINE</h3>
+      <p>
+      Puzzle-platformer featuring time-rewind mechanics.
+      Built custom physics override layer to allow
+      deterministic rewind system.
+      </p>
+      <ul>
+        <li>Time-state snapshot system</li>
+        <li>Physics replay engine</li>
+        <li>Signal-based puzzle logic</li>
+        <li>Adaptive difficulty controller</li>
+      </ul>
+      <button onclick="openModal('modal2')">View Gameplay</button>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-info">
+      <h3>🌌 NODEBOUND</h3>
+      <p>
+      Narrative-driven exploration game inspired by neural networks.
+      Scene transitions built via custom graph navigation architecture.
+      </p>
+      <ul>
+        <li>Graph-based scene manager</li>
+        <li>Dialogue state system</li>
+        <li>Custom save/load serialization</li>
+        <li>Shader-driven visual transitions</li>
+      </ul>
+      <button onclick="openModal('modal3')">View Gameplay</button>
+    </div>
+  </div>
+
+</section>
+
+<section class="glass skills">
+  <h2>Skill Tree</h2>
+  <div class="skill-grid">
+    <div class="skill unlocked">Game Architecture</div>
+    <div class="skill unlocked">AI Systems</div>
+    <div class="skill unlocked">Procedural Generation</div>
+    <div class="skill unlocked">UI/UX Systems</div>
+    <div class="skill unlocked">Physics Manipulation</div>
+    <div class="skill unlocked">Shader Programming</div>
+    <div class="skill unlocked">Optimization</div>
+    <div class="skill locked">Multiplayer Netcode</div>
+  </div>
+</section>
+
+<section class="glass achievements">
+  <h2>Achievements Unlocked</h2>
+  <div class="achievements-grid">
+    <div>🏆 Built Custom Engine Tools</div>
+    <div>🚀 Achieved 60 FPS Stable Systems</div>
+    <div>🧠 Designed Modular Architecture</div>
+    <div>⚡ Reduced Load Times by 35%</div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Nidhi Bivalkar • Built Like a Game
+</footer>
+
+</div>
+
+<!-- Gameplay Modals -->
+<div id="modal1" class="modal"><div class="modal-content"><span onclick="closeModal('modal1')">&times;</span><p>Gameplay preview coming soon.</p></div></div>
+<div id="modal2" class="modal"><div class="modal-content"><span onclick="closeModal('modal2')">&times;</span><p>Gameplay preview coming soon.</p></div></div>
+<div id="modal3" class="modal"><div class="modal-content"><span onclick="closeModal('modal3')">&times;</span><p>Gameplay preview coming soon.</p></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
